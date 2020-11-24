@@ -56,11 +56,6 @@ namespace Autotestai.Page
                 if (listOfStates.Contains(option.GetAttribute("value")))
                 {
                     action.Click(option);
-                    /*for (int i = 0; i <= listOfStates.Count; i++)
-                    {
-                        WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(5));
-                        wait.Until(ExpectedConditions.ElementToBeSelected(option));
-                    } */
                     Thread.Sleep(2000);
                 } 
             
